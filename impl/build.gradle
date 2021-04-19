@@ -1,0 +1,26 @@
+//plugins {
+//    id 'java'
+//}
+//
+//group 'com.bionexo.ubs'
+//version '0.0.1-SNAPSHOT'
+//
+//repositories {
+//    mavenCentral()
+//}
+
+dependencies {
+    dependencies {
+        implementation project(':exception')
+        implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+        annotationProcessor 'org.projectlombok:lombok'
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+//
+//test {
+//    useJUnitPlatform()
+//}
